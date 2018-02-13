@@ -15,15 +15,18 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-
-Vue.component('register-component', require('./components/RegisterComponent.vue'));
-Vue.component('login-component', require('./components/LoginComponent.vue'));
+Vue.component('check-box', require('./component/auth/CheckBox.vue'));
+Vue.component('register-form', require('./component/auth/RegisterForm.vue'));
+Vue.component('login-form', require('./component/auth/LoginForm.vue'));
+Vue.component('send-password', require('./component/auth/SendPassword.vue'));
+//Vue.component('register-component', require('./components/RegisterComponent.vue'));
+//Vue.component('login-component', require('./components/LoginComponent.vue'));
 Vue.component('layout-component', require('./component/layouts/notAuth/LayoutNotAuth.vue'));
 Vue.component('register-invation', require('./component/layouts/notAuth/RegisterInvation.vue'));
 Vue.component('main-poster', require('./component/layouts/MainPoster.vue'));
 Vue.component('right-drawer', require('./component/layouts/RightDrawer.vue'));
 Vue.component('left-drawer', require('./component/layouts/LeftDrawer.vue'));
-Vue.component('cards-component', require('./components/CardsComponent.vue'));
+//Vue.component('cards-component', require('./components/CardsComponent.vue'));
 
 
 
