@@ -19,9 +19,25 @@ Vue.component('check-box', require('./component/auth/CheckBox.vue'));
 Vue.component('register-form', require('./component/auth/RegisterForm.vue'));
 Vue.component('login-form', require('./component/auth/LoginForm.vue'));
 Vue.component('send-password', require('./component/auth/SendPassword.vue'));
+Vue.component('cart-product', require('./component/cart/CartProduct.vue'));
+
+Vue.component('layout-cart', require('./component/layouts/notAuth/LayoutCart.vue'));
+Vue.component('cart-step1', require('./component/cart/CartStep1.vue'));
+Vue.component('cart-step2', require('./component/cart/CartStep2.vue'));
+Vue.component('cart-step3', require('./component/cart/CartStep3.vue'));
+
+
+Vue.component('layout-productlist', require('./component/layouts/notAuth/LayoutProductlist.vue'));
+Vue.component('product-list', require('./component/products/ProductList.vue'));
+
+
+Vue.component('layout-productcategories', require('./component/layouts/notAuth/LayoutProductcategories.vue'));
+Vue.component('product-categories', require('./component/products/ProductCategories.vue'));
+Vue.component('product-subcategories', require('./component/products/ProductSubCategories.vue'));
 //Vue.component('register-component', require('./components/RegisterComponent.vue'));
 //Vue.component('login-component', require('./components/LoginComponent.vue'));
 Vue.component('layout-component', require('./component/layouts/notAuth/LayoutNotAuth.vue'));
+
 Vue.component('register-invation', require('./component/layouts/notAuth/RegisterInvation.vue'));
 Vue.component('main-poster', require('./component/layouts/MainPoster.vue'));
 Vue.component('right-drawer', require('./component/layouts/RightDrawer.vue'));

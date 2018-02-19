@@ -15,6 +15,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/product-categories', function () {
+    return view('productCategories');
+});
+Route::get('/product-list', function () {
+    return view('productList');
+});
+
+Route::get('/cart', function () {
+    return view('cart');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/product-categories', 'ProductCategoriesController@index')->name('product-categories');
+

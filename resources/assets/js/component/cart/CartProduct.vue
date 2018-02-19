@@ -1,9 +1,9 @@
 <template>
   <v-layout >
-    <v-flex xs12 sm6 offset-sm3 >
+    <v-flex xs12 sm6 offset-sm3>
       <span v-for="item in items" :key="item.kod" @click="">
         
-       <v-card flat raised >
+       <v-card flat raised>
         <v-card-title primary-title>
           <div>
             <div class="headline">{{ item.title }}</div>
@@ -44,8 +44,8 @@
           </v-card-text>
         </v-slide-y-transition>
         <v-card-media>
-          <v-carousel hide-delimiters style="box-shadow: none;">
-            <v-carousel-item  v-for="i in item.src" v-bind:src="i.img" :key="i"></v-carousel-item>
+          <v-carousel hide-delimiters>
+            <v-carousel-item v-for="i in item.src" v-bind:src="i.img" :key="i"></v-carousel-item>
           </v-carousel>
         </v-card-media>
         
