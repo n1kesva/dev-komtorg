@@ -15,40 +15,37 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('check-box', require('./component/auth/CheckBox.vue'));
-Vue.component('register-form', require('./component/auth/RegisterForm.vue'));
-Vue.component('login-form', require('./component/auth/LoginForm.vue'));
-Vue.component('send-password', require('./component/auth/SendPassword.vue'));
-Vue.component('cart-product', require('./component/cart/CartProduct.vue'));
+Vue.component('layout-main', require('./components/layouts/notAuth/LayoutMain.vue'));
+Vue.component('layout-aboutus', require('./components/layouts/notAuth/LayoutAboutus.vue'));
+Vue.component('layout-cart', require('./components/layouts/notAuth/LayoutCart.vue'));
+Vue.component('layout-contacts', require('./components/layouts/notAuth/LayoutContacts.vue'));
+Vue.component('layout-productcategories', require('./components/layouts/notAuth/LayoutProductcategories.vue'));
+Vue.component('layout-productlist', require('./components/layouts/notAuth/LayoutProductlist.vue'));
 
-Vue.component('layout-cart', require('./component/layouts/notAuth/LayoutCart.vue'));
-Vue.component('cart-step1', require('./component/cart/CartStep1.vue'));
-Vue.component('cart-step2', require('./component/cart/CartStep2.vue'));
-Vue.component('cart-step3', require('./component/cart/CartStep3.vue'));
+Vue.component('register-form', require('./components/auth/RegisterForm.vue'));
+Vue.component('login-form', require('./components/auth/LoginForm.vue'));
+Vue.component('send-password', require('./components/auth/SendPassword.vue'));
 
+Vue.component('right-drawer', require('./components/layouts/RightDrawer.vue'));
+Vue.component('left-drawer', require('./components/layouts/LeftDrawer.vue'));
 
-Vue.component('layout-productlist', require('./component/layouts/notAuth/LayoutProductlist.vue'));
-Vue.component('product-list', require('./component/products/ProductList.vue'));
+Vue.component('check-box', require('./components/auth/CheckBox.vue'));
 
+// const c = {
+// 	template: 'check check 1 2 3'
+// };
 
-Vue.component('layout-productcategories', require('./component/layouts/notAuth/LayoutProductcategories.vue'));
-Vue.component('product-categories', require('./component/products/ProductCategories.vue'));
-Vue.component('product-subcategories', require('./component/products/ProductSubCategories.vue'));
-//Vue.component('register-component', require('./components/RegisterComponent.vue'));
-//Vue.component('login-component', require('./components/LoginComponent.vue'));
-Vue.component('layout-component', require('./component/layouts/notAuth/LayoutNotAuth.vue'));
-
-Vue.component('register-invation', require('./component/layouts/notAuth/RegisterInvation.vue'));
-Vue.component('main-poster', require('./component/layouts/MainPoster.vue'));
-Vue.component('right-drawer', require('./component/layouts/RightDrawer.vue'));
-Vue.component('left-drawer', require('./component/layouts/LeftDrawer.vue'));
-//Vue.component('cards-component', require('./components/CardsComponent.vue'));
-
-
+// var router = new VueRouter({
+//     routes: [
+//         // { path: '/', component: layout-main },
+//         { path: '/cart', component: c },
+//         { path: '/contacts', component: 'layout-contacts' }
+//     ]
+// });
 
 const app = new Vue({
     el: '#app'
+    // router: router
 });
-
 
 

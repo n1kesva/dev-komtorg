@@ -11,8 +11,7 @@
     >
       <v-toolbar-side-icon class="black--text" @click.stop="left = !left"></v-toolbar-side-icon>
       <v-toolbar-title>КОМТОРГ</v-toolbar-title>
-      <login-form></login-form>
-      <register-form></register-form>
+      
       <send-password></send-password>
       <v-spacer></v-spacer>
       <v-btn icon>
@@ -43,7 +42,8 @@
 
      <v-content>
       
-          <product-categories></product-categories>
+          <main-poster></main-poster>
+          <register-invation></register-invation>
           
     </v-content>
 
@@ -51,7 +51,10 @@
   </v-app>
 
 </template>
+
 <script>
+  import Path1 from '../../welcome/MainPoster.vue';
+  import Path2 from '../../welcome/RegisterInvation.vue';
   export default {
     data: () => ({
       drawer: null,
@@ -61,6 +64,11 @@
     }),
     props: {
       source: String
+    },
+    components: {
+      'main-poster': Path1,
+      'register-invation': Path2,
+
     }
   }
 </script>

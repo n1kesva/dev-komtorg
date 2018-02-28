@@ -21,6 +21,9 @@ try {
  */
 
 window.Vue = require('vue');
+window.VueRouter = require('vue-router');
+
+Vue.use(VueRouter);
 
 /**
  * Vuetify Provides Vue.js 2 ready components

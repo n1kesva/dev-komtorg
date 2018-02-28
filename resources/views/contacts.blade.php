@@ -1,4 +1,4 @@
-<!doctype html>
+'<!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
@@ -12,11 +12,9 @@
         <link rel="stylesheet" type="text/css" href="/css/app.css">
     </head>
     <body>
-        <div  id="app">
-            <layout-main></layout-main>
-            <!-- <router-view></router-view> -->
-        </div>
-        <script type="text/javascript" src="/js/app.js">
-        </script>
+        <div id="app">
+            <layout-contacts></layout-contacts>
+        </div>   
+        <script type="text/javascript" src="/js/app.js"></script>
     </body>
 </html>

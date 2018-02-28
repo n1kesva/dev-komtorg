@@ -1,8 +1,5 @@
 <template>
 
-
- 
-
   <v-expansion-panel expand>
     <v-expansion-panel-content v-for="item in items" :key="item.title" >
       <div slot="header">{{ item.title }}</div>
@@ -14,6 +11,7 @@
 </template>
 
 <script>
+  import Path from './ProductSubCategories.vue';
   export default {
     data () {
       return {
@@ -45,6 +43,9 @@
         ]
         
       }
+    },
+    components: {
+      'product-subcategories': Path,
     }
   }
 </script>

@@ -18,12 +18,19 @@ Route::get('/', function () {
 Route::get('/product-categories', function () {
     return view('productCategories');
 });
+Route::get('/about-us', function () {
+    return view('aboutUs');
+});
 Route::get('/product-list', function () {
     return view('productList');
 });
 
 Route::get('/cart', function () {
     return view('cart');
+});
+
+Route::get('/contacts', function () {
+    return view('contacts');
 });
 
 Auth::routes();

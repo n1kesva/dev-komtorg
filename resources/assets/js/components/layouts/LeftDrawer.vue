@@ -1,13 +1,14 @@
 <template>
   <v-navigation-drawer permanent light>
     <v-toolbar flat>
-      <v-list>
-        <v-list-tile>
-          <v-list-tile-title class="title">
-
-          </v-list-tile-title>
-        </v-list-tile>
-      </v-list>
+      <!-- <v-list class="sva-list"> -->
+        <!-- <v-list-tile class="sva-list-tile"> -->
+          <!-- <v-list-tile-title class="title"> -->
+            <login-form></login-form>|
+            <register-form></register-form>
+          <!-- </v-list-tile-title> -->
+        <!-- </v-list-tile> -->
+      <!-- </v-list> -->
     </v-toolbar>
     <v-divider></v-divider>
 <!--     <v-list dense class="pt-0">
@@ -77,3 +78,4 @@
     }
   }
 </script>
+

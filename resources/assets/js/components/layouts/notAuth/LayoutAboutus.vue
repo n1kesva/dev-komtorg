@@ -11,9 +11,7 @@
     >
       <v-toolbar-side-icon class="black--text" @click.stop="left = !left"></v-toolbar-side-icon>
       <v-toolbar-title>КОМТОРГ</v-toolbar-title>
-      <login-form></login-form>
-      <register-form></register-form>
-      <send-password></send-password>
+      
       <v-spacer></v-spacer>
       <v-btn icon>
         <v-icon color="grey lighten-1">shopping_cart</v-icon>
@@ -43,7 +41,7 @@
 
      <v-content>
       
-          <product-list></product-list>
+          <about-us></about-us>
           
     </v-content>
 
@@ -52,6 +50,7 @@
 
 </template>
 <script>
+  import Path from '../../about/AboutUs.vue';
   export default {
     data: () => ({
       drawer: null,
@@ -61,6 +60,9 @@
     }),
     props: {
       source: String
+    },
+    components: {
+      'about-us': Path
     }
   }
 </script>

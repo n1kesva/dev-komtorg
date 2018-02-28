@@ -12,11 +12,10 @@
         <link rel="stylesheet" type="text/css" href="/css/app.css">
     </head>
     <body>
-        <div  id="app">
-            <layout-main></layout-main>
-            <!-- <router-view></router-view> -->
-        </div>
-        <script type="text/javascript" src="/js/app.js">
-        </script>
+       <div  id="app">
+         <layout-aboutus></layout-aboutus>
+       </div>  
+    
+        <script type="text/javascript" src="/js/app.js"></script>
     </body>
 </html>
