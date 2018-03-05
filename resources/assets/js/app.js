@@ -8,6 +8,13 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+// window.VueRouter = require('vue-router');
+
+// Vue.use(VueRouter);
+
+//import Vue from 'vue';
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -31,21 +38,17 @@ Vue.component('left-drawer', require('./components/layouts/LeftDrawer.vue'));
 
 Vue.component('check-box', require('./components/auth/CheckBox.vue'));
 
-// const c = {
-// 	template: 'check check 1 2 3'
-// };
 
-// var router = new VueRouter({
-//     routes: [
-//         // { path: '/', component: layout-main },
-//         { path: '/cart', component: c },
-//         { path: '/contacts', component: 'layout-contacts' }
-//     ]
-// });
+import { routes } from './routes';
+
+const router = new VueRouter({
+	mode: 'history',
+    routes
+});
 
 const app = new Vue({
-    el: '#app'
-    // router: router
+    el: '#app',
+    router
 });
 
 

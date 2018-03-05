@@ -11,30 +11,33 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/product-categories', function () {
-    return view('productCategories');
-});
-Route::get('/about-us', function () {
-    return view('aboutUs');
-});
-Route::get('/product-list', function () {
-    return view('productList');
-});
+// Route::get('/product-categories', function () {
+//     return view('productCategories');
+// });
+// Route::get('/about-us', function () {
+//     return view('aboutUs');
+// });
+// Route::get('/product-list', function () {
+//     return view('productList');
+// });
 
-Route::get('/cart', function () {
-    return view('cart');
-});
+// Route::get('/cart', function () {
+//     return view('cart');
+// });
 
-Route::get('/contacts', function () {
-    return view('contacts');
-});
+// Route::get('/contacts', function () {
+//     return view('contacts');
+// });
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/product-categories', 'ProductCategoriesController@index')->name('product-categories');
 
+Route::get('/{vue_capture?}', function () {
+ return view('welcome');
+})->where('vue_capture', '[\/\w\.-]*');

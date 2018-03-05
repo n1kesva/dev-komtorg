@@ -13,8 +13,8 @@
     </head>
     <body>
         <div  id="app">
-            <layout-main></layout-main>
-            <!-- <router-view></router-view> -->
+            <!-- <layout-main></layout-main> -->
+            <router-view></router-view>
         </div>
         <script type="text/javascript" src="/js/app.js">
         </script>
